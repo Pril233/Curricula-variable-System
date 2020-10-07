@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>Curricula-variable System</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>queryDepartServlet</servlet-name>
+  	<servlet-class>org.System.servlet.DepartmentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>queryDepartServlet</servlet-name>
+  	<url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+    <servlet>
+  	<servlet-name>StudentServlet</servlet-name>
+  	<servlet-class>org.System.servlet.StudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StudentServlet</servlet-name>
+  	<url-pattern>*.Do</url-pattern>
+  </servlet-mapping>
+   <servlet>
+  	<servlet-name>CourseServlet</servlet-name>
+  	<servlet-class>org.System.servlet.CourseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CourseServlet</servlet-name>
+  	<url-pattern>*.Go</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>TeacherServlet</servlet-name>
+  	<servlet-class>org.System.servlet.TeacherServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>TeacherServlet</servlet-name>
+  	<url-pattern>*.GO</url-pattern>
+  </servlet-mapping>
+    <servlet>
+  	<servlet-name>SystemServlet</servlet-name>
+  	<servlet-class>org.System.servlet.SystemServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SystemServlet</servlet-name>
+  	<url-pattern>*.IN</url-pattern>
+  </servlet-mapping>
+   <servlet>
+  	<servlet-name>SctServlet</servlet-name>
+  	<servlet-class>org.System.servlet.SctServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SctServlet</servlet-name>
+  	<url-pattern>*.In</url-pattern>
+  </servlet-mapping>
+  
+    
+  
+
+ 
+  
+</web-app>
